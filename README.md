@@ -5,7 +5,7 @@
 This dataset includes financial transactions by various clients, encompassing client details, contact persons, departments, regions, payment methods, revenue, profit, and profit margin. However, to ensure accurate information presentation to my team, I employed a meticulous data cleaning process using SQL. This involved addressing specific issues within the dataset and refining it for clarity and precision. Through the application of SQL queries, I meticulously cleansed the data, identifying and rectifying inconsistencies, errors, and missing values. This proactive approach not only enhanced the overall quality of the dataset but also contributed to the reliability and accuracy of the subsequent analyses and insights derived from the financial transactions.
 
 #### 1. Replace
-Certainly! Here's a simplified explanation:
+The following code shows what's in the 'Client' column. Then, it goes through and deletes anything between parentheses in rows with an opening parenthesis. Finally, it reveals what the 'Client' column looks like after those changes
 
 1. **Show original data:**
     ```sql
