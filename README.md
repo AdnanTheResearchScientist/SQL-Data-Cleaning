@@ -4,14 +4,7 @@
 
 This dataset includes financial transactions by various clients, encompassing client details, contact persons, departments, regions, payment methods, revenue, profit, and profit margin. However, to ensure accurate information presentation to my team, I employed a meticulous data cleaning process using SQL. This involved addressing specific issues within the dataset and refining it for clarity and precision. Through the application of SQL queries, I meticulously cleansed the data, identifying and rectifying inconsistencies, errors, and missing values. This proactive approach not only enhanced the overall quality of the dataset but also contributed to the reliability and accuracy of the subsequent analyses and insights derived from the financial transactions.
 
-
-#### 1. Autofit Rows and Columns
-   - **Problem:** Long rows
-   - **Solution:** 
-     - Selected all (CTRL + A), went to Format, and chose Autofit Row Height (Alt + H + O + I) for rows and Autofit Column Width (Alt + H + O + C) for columns.
-   - **Result**: Resolved long rows, significantly enhancing overall readability.
-
-#### 3. Find & Replace
+#### 1. Find & Replace
    - **Problem:** Unnecessary Info
    - **Solution:**
      - Removed unnecessary info within parentheses by selecting the whole column, using Find & Select, and employing the Replace tool (CTRL + H).
