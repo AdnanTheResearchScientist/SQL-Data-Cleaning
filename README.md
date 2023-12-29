@@ -10,13 +10,13 @@ Certainly! Here's a simplified explanation:
 1. **Show original data:**
     ```sql
     SELECT Client FROM [KenjiExplains].[dbo].[KenjiExplains];
-       ```
+    ```
 3. **Remove data between parentheses:**
     ```sql
     UPDATE [KenjiExplains].[dbo].[KenjiExplains]
     SET Client = LEFT(Client, CHARINDEX('(', Client + '(') - 1)
     WHERE Client LIKE '%(%';
-       ```
+    ```
 5. **Show modified results:**
     ```sql
     SELECT * FROM [KenjiExplains].[dbo].[KenjiExplains];
