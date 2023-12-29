@@ -4,12 +4,21 @@
 
 This dataset includes financial transactions by various clients, encompassing client details, contact persons, departments, regions, payment methods, revenue, profit, and profit margin. However, to ensure accurate information presentation to my team, I employed a meticulous data cleaning process using SQL. This involved addressing specific issues within the dataset and refining it for clarity and precision. Through the application of SQL queries, I meticulously cleansed the data, identifying and rectifying inconsistencies, errors, and missing values. This proactive approach not only enhanced the overall quality of the dataset but also contributed to the reliability and accuracy of the subsequent analyses and insights derived from the financial transactions.
 
-#### 1. Find & Replace
-   - **Problem:** Unnecessary Info
-   - **Solution:**
-     - Removed unnecessary info within parentheses by selecting the whole column, using Find & Select, and employing the Replace tool (CTRL + H).
-     - Typed (*) to remove anything within parentheses, clicked Replace All, then closed.
-   -**Result**: Enhanced data clarity by eliminating unnecessary information.
+#### 1. Replace
+Certainly! Here's a simplified explanation:
+
+1. **Show original data:**
+    SELECT Client FROM [KenjiExplains].[dbo].[KenjiExplains];
+2. **Remove data between parentheses:**
+    UPDATE [KenjiExplains].[dbo].[KenjiExplains]
+    SET Client = LEFT(Client, CHARINDEX('(', Client + '(') - 1)
+    WHERE Client LIKE '%(%';
+3. **Show modified results:**
+    ```sql
+    SELECT * FROM [KenjiExplains].[dbo].[KenjiExplains];
+    ```
+
+In short, it displays the original data, removes text between parentheses, and then shows the modified results.
 
 #### 4. Lower
    - **Problem:** All text is Uppercase, making it hard to read
